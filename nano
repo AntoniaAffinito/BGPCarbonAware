@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BGP Carbon Aware</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>BGP Carbon Aware</h1>
+    <p>Analyzing the environmental impact of BGP routing decisions</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Goal</h2>
+      <p>This project investigates how BGP routing can consider carbon 
+emissions by choosing greener paths.</p>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <img src="bgp-graph.png" alt="BGP Carbon Graph" 
+style="max-width:100%;">
+      <p>Preliminary data shows emission differences by route.</p>
+    </section>
+
+    <section>
+      <h2>Data</h2>
+      <p><a href="carbon-data.csv">Download CSV dataset</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Antonia Affinito</p>
+  </footer>
+</body>
+</html>
+
