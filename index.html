@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="tables.js" defer></script>
   <meta charset="UTF-8">
   <title>BGP Carbon Aware</title>
   <link rel="stylesheet" href="style.css">
@@ -12,24 +13,25 @@
   </header>
 
   <main>
-    <section>
-      <h2>Goal</h2>
-      <p>This project investigates how BGP routing can consider carbon 
-emissions by choosing greener paths.</p>
-    </section>
-
-    <section>
-      <h2>Results</h2>
-      <img src="bgp-graph.png" alt="BGP Carbon Graph" 
-style="max-width:100%;">
-      <p>Preliminary data shows emission differences by route.</p>
-    </section>
-
-    <section>
-      <h2>Data</h2>
-      <p><a href="carbon-data.csv">Download CSV dataset</a></p>
-    </section>
-  </main>
+    <h2>BGP CO₂ Emission Tables</h2>
+    <div id="tables-container" style="display: flex; gap: 2em; flex-wrap: wrap;">
+      <div style="flex: 1;">
+        <h3>AS CO₂ Intensity (Top 10 Greenest)</h3>
+        <table id="as-intensity-table" border="1"></table>
+        <button onclick="prevPage('intensity')">Previous</button>
+        <button onclick="nextPage('intensity')">Next</button>
+      </div>
+  
+      <div style="flex: 1;">
+        <h3>AS Link Total CO₂ (Top 10 Greenest)</h3>
+        <table id="link-emissions-table" border="1"></table>
+        <button onclick="prevPage('links')">Previous</button>
+        <button onclick="nextPage('links')">Next</button>
+      </div>
+    </div>
+  
+    <script src="tables.js"></script>
+  </main>  
 
   <footer>
     <p>© 2025 Antonia Affinito</p>
